@@ -21,7 +21,7 @@ const unknownEndpoint = (request,response) => {
 
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
-
+app.use(express.static('dist'))
 app.use(express.json())
 app.use(requestLogger)
 app.use(morgan('tiny'))
