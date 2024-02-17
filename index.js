@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const Note = require('./notes-backend/models/note')
+const Note = require('./models/note')
 
 
 
